@@ -13,5 +13,5 @@ int main(){
             counter++;
         }
     }
-    printf("სულ მსგავსი შემთხვევები არის : %d\n ცალი", counter);
+    printf("სულ მსგავსი შემთხვევები არის : %d ცალი\n", counter);
 }
