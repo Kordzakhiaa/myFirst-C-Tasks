@@ -28,9 +28,9 @@ int main(){
     }
 
     printf("უარყოფითი რიცხვები\n");
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 12; i++)
     {
-        printf("%d  ", my_array[i]);
+        printf("[%d]  ", my_array[i]);
     }
     printf("\nუარყოფითი რიცხვების რაოდებონა არის %d\n", negative_nums_quantity);
 
