@@ -17,13 +17,9 @@ int main(){
     printf("y = ");
     scanf("%f", &y);
     
-    // x = 120;
-    // p = 15;
-    // y = 300;
-    
     int counter = 0;
 
-    while (x < 300)
+    while (x < y)
     {
         x += x * p / 100;
         x = floor(x);
