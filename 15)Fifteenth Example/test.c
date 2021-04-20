@@ -21,7 +21,7 @@ int main(){
     printf("შემოიყვანეთ თვე და რიცხვი გამოტოვებით[მინიშნება: 1 14 (14 იანვარი)] :\t");
     scanf("%d %d", &inputed_month, &inputed_days);
     int array_of_days[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-    //                         1   2   3   4   5   6   7   8   9  10  11  12
+    //                         0   1   2   3   4   5   6   7   8  9  10  11
 
     int counter = 0, days_passed = 0;
 
@@ -35,7 +35,7 @@ int main(){
         days_passed += inputed_days;
         break;
     }
-    
+
     printf("ამ წლის პირველი დღიდან დღევანდელ დღემდე გასულია : %d-დღე\n", days_passed);
     
     return 0;
