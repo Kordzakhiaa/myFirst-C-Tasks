@@ -7,13 +7,17 @@ int main(){
     
     int year;
 
-    printf("Input Year: ");
+    printf("შემოიყვანეთ წელი რომ დავადგინოთ არის თუ არა ნაკიანი[მაგ: 2021]: ");
     scanf("%d", &year);
 
     if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+    {
         printf("%d ნაკიანი წელია ამიტომ ამ წელს არის 366 დღე\n", year);
-    else
+    }
+        
+    else{
         printf("%d არ არის ნაკიანი წელია ამიტომ 365 დღეა\n", year);
+    }
 
     return 0;
 }
