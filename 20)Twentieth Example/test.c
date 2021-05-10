@@ -68,6 +68,7 @@ int fill_array_with_random_nums(int array[SIZE_I][SIZE_J], int size_i, int size_
         }
         
     }
+    return **array;
     
 }
 
