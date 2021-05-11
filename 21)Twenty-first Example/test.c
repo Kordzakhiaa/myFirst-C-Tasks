@@ -56,7 +56,7 @@ void print_two()
     {
         for (int j = 0; j < 3; j++)
         {
-            if (i == 0 && j == 0 || i == 2 && j == 2)
+            if ((i == 0 && j == 0) || (i == 2 && j == 2))
             {
                 printf("(*)\t");
             }
@@ -78,7 +78,7 @@ void print_three()
     {
         for (int j = 0; j < 3; j++)
         {
-            if (i == 0 && j == 0 || i == 1 && j == 1 || i == 2 && j == 2)
+            if ((i == 0 && j == 0) || (i == 1 && j == 1) || (i == 2 && j == 2))
             {
                 printf("(*)\t");
             }
@@ -100,7 +100,7 @@ void print_four()
     {
         for (int j = 0; j < 3; j++)
         {
-            if (i == 0 && j == 0 || i == 0 && j == 2 || i == 2 && j == 0 || i == 2 && j == 2)
+            if ((i == 0 && j == 0) || (i == 0 && j == 2) || (i == 2 && j == 0) || (i == 2 && j == 2))
             {
                 printf("(*)\t");
             }
@@ -121,7 +121,7 @@ void print_five()
     {
         for (int j = 0; j < 3; j++)
         {
-            if (i == 0 && j == 0 || i == 0 && j == 2 || i == 1 && j == 1 || i == 2 && j == 0 || i == 2 && j == 2)
+            if ((i == 0 && j == 0) || (i == 0 && j == 2) || (i == 1 && j == 1) || (i == 2 && j == 0) || (i == 2 && j == 2))
             {
                 printf("(*)\t");
             }
@@ -143,7 +143,7 @@ void print_six()
     {
         for (int j = 0; j < 3; j++)
         {
-            if (i == 0 && j == 0 || i == 0 && j == 1 || i == 0 && j == 2 || i == 2 && j == 0 || i == 2 && j == 1 || i == 2 && j == 2)
+            if ((i == 0 && j == 0) || (i == 0 && j == 1) || (i == 0 && j == 2) || (i == 2 && j == 0) || (i == 2 && j == 1) || (i == 2 && j == 2))
             {
                 printf("(*)\t");
             }
@@ -190,7 +190,7 @@ int rolling_dice(){
     return result;
 }
 
-int computer_starts(){
+void computer_starts(){
     int computer_dice = 0, player_dice = 0;
     int counter = 1;
 
@@ -222,7 +222,7 @@ int computer_starts(){
 }
 
 
-int player_starts(){
+void player_starts(){
     int computer_dice = 0, player_dice = 0;
     int counter = 1;
 
@@ -256,7 +256,7 @@ int player_starts(){
     
 }
 
-char start_game(){
+void start_game(){
     char user_input[10];
 
     printf("\n    <<< Hello this is dice game >>>\n\n");
