@@ -111,6 +111,7 @@ void print_four()
         }
         printf("\n\n");
     }
+    printf("--------------------\n");
 }
 
 // function that prints five score in dice style
