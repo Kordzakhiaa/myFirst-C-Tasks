@@ -34,7 +34,7 @@ int main()
 
 
 void print_answer(int size, int arr[size]){
-    int max = 1, len = 1;
+    int max = 1, len = 0;
 
     for (int i = 0; i < size; i++)
     {
@@ -47,7 +47,7 @@ void print_answer(int size, int arr[size]){
             if (max < len)
             {
                 max = len;
-                len = 1;
+                len = 0;
             }
         }
     }
